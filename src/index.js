@@ -39,4 +39,30 @@ const siteContent = { // DO NOT CHANGE THIS OBJECT
   },
 };
 
-console.log('project wired!')
+console.log('project wired2!')
+
+
+const contactH4 = document.querySelector('section.contact h4');
+contactH4.textContent = siteContent['contact']['contact-h4'];
+const address = document.querySelector('section.contact p:nth-of-type(1)');
+address.textContent = siteContent['contact']['address'];
+const phone = document.querySelector('section.contact p:nth-of-type(2)');
+phone.textContent = siteContent['contact']['phone'];
+const email = document.querySelector('section.contact p:nth-of-type(3)');
+email.textContent = siteContent['contact']['email'];
+
+
+
+
+
+const copyRight = document.querySelector('footer a');
+copyRight.textContent =  'Copyright Great Idea! 2021'
+
+const logoImg = document.querySelector('#logo-img');
+logoImg.src = siteContent['images']['logo-img'];
+
+const ctaImg = document.querySelector('#cta-img');
+ctaImg.src = siteContent['images']['cta-img'];
+
+const accentImage = document.querySelector('#middle-img');
+accentImage.src = siteContent['images']['accent-img'];
